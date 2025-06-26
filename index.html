@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Image Carousel Level 1</title>
+  </head>
+  <body>
+    <!-- 1st section -->
+    <div class="page-header">
+      <img src="./assets/logo/wsa-logo.svg" alt="company's logo" />
+      <h1 class="project-title">Image Carousel</h1>
+    </div>
+
+    <!-- 2nd section -->
+    <section class="carousel-wrapper">
+      <!-- carousel slides with next and previous button-->
+
+      <div class="carousel-slides-container">
+        <button class="prev-btn" onclick="slideChange(-1)">
+          <img src="./assets/icons/arrow-prev.svg" alt="prev" />
+        </button>
+
+        <img
+          src="./assets/images/slide1.png"
+          alt="slide-1"
+          class="carousel-slide"
+        />
+
+        <img
+          src="./assets/images/slide2.png"
+          alt="slide-2"
+          class="carousel-slide"
+        />
+
+        <img
+          src="./assets/images/slide3.png"
+          alt="slide-3"
+          class="carousel-slide"
+        />
+
+        <button class="next-btn" onclick="slideChange(1)">
+          <img src="./assets/icons/arrow-next.svg" alt="next" />
+        </button>
+      </div>
+
+      <!-- carousel dots -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- 3rd section -->
+    <p class="copyright-text">&#169; 2025 WSA. All Rights Reserved</p>
+
+    <!-- level2 popup view html starts -->
+
+    <div class="popup" id="imagepopup">
+      <span class="close">&times;</span>
+      <div class="popup-content">
+        <img
+          src="./assets/images/slide1.png"
+          alt="enlarged-image"
+          id="popup-image"
+        />
+      </div>
+    </div>
+    <!-- level2 popup view html ends -->
+     
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
