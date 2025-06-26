@@ -53,7 +53,7 @@ body {
   color: white;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
-  /* border: none; */
+  border: none;
   transform: translateY(-50%);
 }
 
@@ -102,7 +102,7 @@ body {
 
 /* level 2 started */
 .popup {
-  /* display: none; */
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
