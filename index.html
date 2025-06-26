@@ -26,18 +26,21 @@
           src="./assets/images/slide1.png"
           alt="slide-1"
           class="carousel-slide"
+          onclick="openPopup()"
         />
 
         <img
           src="./assets/images/slide2.png"
           alt="slide-2"
           class="carousel-slide"
+          onclick="openPopup()"
         />
 
         <img
           src="./assets/images/slide3.png"
           alt="slide-3"
           class="carousel-slide"
+          onclick="openPopup()"
         />
 
         <button class="next-btn" onclick="slideChange(1)">
@@ -47,9 +50,9 @@
 
       <!-- carousel dots -->
       <div class="carousel-dots">
-        <span class="dot" onclick="changeSlide(0)"></span>
-        <span class="dot" onclick="changeSlide(1)"></span>
-        <span class="dot" onclick="changeSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
       </div>
     </section>
 
@@ -59,7 +62,7 @@
     <!-- level2 popup view html starts -->
 
     <div class="popup" id="imagePopup">
-      <span class="close">&times;</span>
+      <span class="close" onclick="closePopup()">&times;</span>
       <div class="popup-content">
         <img
           src="./assets/images/slide1.png"
